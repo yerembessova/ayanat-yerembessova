@@ -23,7 +23,7 @@ The VM boots; the break-and-rollback cycle is shown in the evidence below.
 I found it difficult to break the VM, so I chose option B. Also, I got confused about how to take a snapshot
 
 ## Evidence
--labs/lab01-first-mv/vm-setting .png -- сPU, memory and disk as configured
-- labs/lab01-first-mv/guest-release.txt — Ubuntu Server is running in the guest
-- labs/lab01-first-mv/broken.png — the guest in its broken state
-- labs/lab01-first-mv/snapshot-list.png— the snapshot, after the rollback
+[-labs/lab01-first-mv/vm-setting .png --](https://github.com/yerembessova/ayanat-yerembessova/blob/main/labs/lab01-first-vm/evidence/vm-setting%20.png) сPU, memory and disk as configured
+- [labs/lab01-first-mv/guest-release.txt](https://github.com/yerembessova/ayanat-yerembessova/blob/main/labs/lab01-first-vm/evidence/guest-release.txt) — Ubuntu Server is running in the guest
+- [labs/lab01-first-mv/broken.png](https://github.com/yerembessova/ayanat-yerembessova/blob/main/labs/lab01-first-vm/evidence/broken.png) — the guest in its broken state
+- [labs/lab01-first-mv/snapshot-list.png](https://github.com/yerembessova/ayanat-yerembessova/blob/main/labs/lab01-first-vm/evidence/snapshot-list.png)— the snapshot, after the rollback
