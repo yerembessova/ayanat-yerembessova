@@ -9,46 +9,35 @@ Date:
 enters the needed commands
 
 ## Result
-Get-CimInstance Win32_PhysicalMemory | Select-Object Manufacturer,Capacity,Speed
+/Get-CimInstance Win32_PhysicalMemory | Select-Object Manufacturer,Capacity,Speed
 
 Manufacturer  Capacity Speed
 ------------  -------- -----
 Samsung     8589934592  5600
 
-i have Samsung and my speed is 5600
------------------------------------------
-Get-PhysicalDisk | Select-Object FriendlyName,MediaType
+/Get-PhysicalDisk | Select-Object FriendlyName,MediaType
 
 FriendlyName              MediaType
 ------------              ---------
 SKHynix_HFS256GEM9X169N SSD
 
-my disk type is SSD
------------------------------------------
-Get-PSDrive C  # Replace C with your VM storage drive letter
+/Get-PSDrive C  # Replace C with your VM storage drive letter
 
 
 Name           Used (GB)     Free (GB) Provider      Root                               CurrentLocation
 ----           ---------     --------- --------      ----                               ---------------
 C                  28.85        208.52 FileSystem    C:\                                Users\Innotech
 
-i have 208 gb
------------------------------------------
-Get-ComputerInfo | Select BiosFirmwareType, BiosVersion, BiosReleaseDate
+/Get-ComputerInfo | Select BiosFirmwareType, BiosVersion, BiosReleaseDate
 
 BiosFirmwareType BiosVersion   BiosReleaseDate
 ---------------- -----------   ---------------
             Uefi LENOVO - 1080 9/22/2025 6:00:00 AM
 
-I have Lenovo biosVersion, Uefi type
-------------------------------------------------------|
-
-Get-CimInstance Win32_Processor | Select Name, VirtualizationFirmwareEnabled, VMMonitorModeExtensions
+/Get-CimInstance Win32_Processor | Select Name, VirtualizationFirmwareEnabled, VMMonitorModeExtensions
 Name             VirtualizationFirmwareEnabled VMMonitorModeExtensions
 ----             ----------------------------- -----------------------
 Intel(R) N100                            False                   False
-
-Virtualization is off. Should be on
 
 ## What did not work the first time
 nothing
