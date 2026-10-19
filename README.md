@@ -1,1 +1,0 @@
-# ayanat-yerembessova
