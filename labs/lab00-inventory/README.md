@@ -1,8 +1,8 @@
 # Lab 0 — Inventory your own machine
 
-Pair:                     Driver first half:
-Machine:
-Date:
+Pair:Ayanat & Anuarkhan  Driver first half:Ayanat
+Machine: Lenovo Windows 11
+Date: 19/10/2026
 
 ## What I did
 
