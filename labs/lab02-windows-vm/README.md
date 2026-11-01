@@ -8,15 +8,27 @@ Date: 1/11/2026
 
 I created a separate Windows 11 virtual machine and connected both machines to the same network so they could work together successfully.I used NAT Network because both guests must see each other and the internet, and bridged mode is blocked on campus Wi-Fi. To make this happen, I ran a specific command on the Ubuntu server that allowed the two machines to see each other.
 
+this is for windows
+
 ```
-<sudo reboot>
+<ipconfig>
+<ipconfig | Set-Clipboard>
 ```
+
+and that one for ubuntu
+```
+<ip -br a>
+<ssh -p 2222 nurlanov@127.0.0.1 "ip addr" > labs/lab02-windows-vm/evidence/ip-addr-linux.txt>
+```
+
+After that, I needed to find out the address of each machine. I used these commands.
+
 
 ## Result
 
 ## What did not work the first time
 
-At least one thing. What I saw, what it turned out to be, what I did about it.
+At step 3, I struggled for a long time to get Windows 11 to download properly. I had to enable core isolation and change some PC settings, and I had to recreate the VM over and over again before it finally downloaded!
 
 ## Evidence
 
