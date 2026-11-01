@@ -1,0 +1,41 @@
+ubuntu
+PING 10.0.2.4 (10.0.2.4) 56(84) bytes of data.
+64 bytes from 10.0.2.4: icmp_seq=1 ttl=128 time=2.04 ms
+64 bytes from 10.0.2.4: icmp_seq=2 ttl=128 time=0.574 ms
+64 bytes from 10.0.2.4: icmp_seq=3 ttl=128 time=0.659 ms
+64 bytes from 10.0.2.4: icmp_seq=4 ttl=128 time=0.710 ms
+10.0.2.4 ping statistics
+4 packets transmitted, 4 received, 0% packet loss, time 3143ms
+rtt min/avg/max/mdev = 0.574/0.995/2.039/0.604 ms
+
+PING google.com (142.251.110.139) 56(84) bytes of data.
+64 bytes from bz-in-f139.1e100.net (142.251.110.139): icmp_seq=1 ttl=64 time=94.4 ms 64 bytes from bz-in-f139.1e100.net (142.251.110.139): icmp_seq=2 ttl=64 time=96.3 ms
+64 bytes from bz-in-f139.1e100.net (142.251.110.139): icmp_seq=3 ttl=64 time=95.0 ms
+64 bytes from bz-in-f139.1e100.net (142.251.110.139): icmp_seq=4 ttl=64 time=95.1 ms
+google.com ping statistics
+4 packets transmitted, 4 received, 0% packet loss, time 3190ms
+rtt min/avg/max/mdev = 94.420/95.202/96.284/0.677 ms
+
+Windows
+Pinging 10.0.2.3 with 32 bytes of data:
+Reply from 10.0.2.3: bytes=32 time=13ms TTL=64
+Reply from 10.0.2.3: bytes=32 time<1ms TTL=64
+Reply from 10.0.2.3: bytes=32 time<1ms TTL=64
+Reply from 10.0.2.3: bytes=32 time<1ms TTL=64
+
+Ping statistics for 10.0.2.3:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 13ms, Average = 3ms
+PS C:\WINDOWS\system32> ping google.com
+
+Pinging google.com [142.251.14.139] with 32 bytes of data:
+Reply from 142.251.14.139: bytes=32 time=98ms TTL=128
+Reply from 142.251.14.139: bytes=32 time=90ms TTL=128
+Reply from 142.251.14.139: bytes=32 time=91ms TTL=128
+Reply from 142.251.14.139: bytes=32 time=90ms TTL=128
+
+Ping statistics for 142.251.14.139:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 90ms, Maximum = 98ms, Average = 92ms
