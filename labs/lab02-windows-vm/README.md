@@ -27,8 +27,7 @@ Date: 1/11/2026
 | Host RAM in use       |7.0 GB       |I couldn't take measurements because my laptop kept crashing and restarting on its own. It was also lagging very badly.|
 | Available             |800-850~ MB  |I couldn't take measurements because my laptop kept crashing and restarting on its own. It was also lagging very badly.|
 | Committed / Swap used |11.5/24.9 GB |I couldn't take measurements because my laptop kept crashing and restarting on its own. It was also lagging very badly.|
-| What I noticed        |-------------|At first, my cursor started lagging, and then it stopped moving altogether. The screen froze. A window appeared, indicating
-|                       |             |a problem. My laptop crashed.
+| What I noticed        |-------------|At first, my cursor started lagging, and then it stopped moving altogether. The screen froze. A window appeared, indicating a problem. My laptop crashed.
 
 ## What did not work the first time
 At step 3, I struggled for a long time to get Windows 11 to download properly. I had to enable core isolation and change some PC settings, and I had to recreate the VM over and over again before it finally downloaded!
