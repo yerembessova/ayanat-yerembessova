@@ -32,8 +32,12 @@ Date: 1/11/2026
 ## What did not work the first time
 At step 3, I struggled for a long time to get Windows 11 to download properly. I had to enable core isolation and change some PC settings, and I had to recreate the VM over and over again before it finally downloaded!
 
-When I tried to take a screenshot for step 7, my laptop crashed. I attempted to repeat the experiment two more times, but the result was the same. Consequently, I used my phone to take a picture of my laptop screen; that is why the file "host-memory-after.png" appears the way it does.
+When I tried to take a screenshot for step 7, my laptop crashed. I attempted to repeat the experiment two more times, but the result was the same. Consequently, I used my phone to take a picture of my laptop screen; that is why the file "host-memory-after.png" appears the way it does.I'm very sorry, my laptop couldn't even open the Task Manager to show just how bad things were. This photo captures the state of my laptop right before it crashed again.
 
 ## Evidence
 
-- [evidence/](evidence/) — one line per file on what it proves
+- [[evidence/ipconfig-windows.txt](evidence/ipconfig-windows.txt)](https://github.com/yerembessova/ayanat-yerembessova/blob/main/labs/lab02-windows-vm/evidence/ipconfig-windows.txt) — Windows address
+- [[evidence/ip-addr-linux.txt](evidence/ip-addr-linux.txt)](https://github.com/yerembessova/ayanat-yerembessova/blob/main/labs/lab02-windows-vm/evidence/ip-addr-linux.txt) — Ubuntu address
+- [[evidence/ping-both-ways.txt](evidence/ping-both-ways.txt)](https://github.com/yerembessova/ayanat-yerembessova/blob/main/labs/lab02-windows-vm/evidence/ping-both-ways.txt) — both directions and the internet
+- [[evidence/host-memory-before.png](evidence/host-memory-before.png)](https://github.com/yerembessova/ayanat-yerembessova/blob/main/labs/lab02-windows-vm/evidence/host-memory-before.png) — host memory, guests off
+- [[evidence/host-memory-after.png](evidence/host-memory-after.png)](https://github.com/yerembessova/ayanat-yerembessova/blob/main/labs/lab02-windows-vm/evidence/host-memory-after.png) — host memory, both guests overcommitted
