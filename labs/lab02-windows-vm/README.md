@@ -24,8 +24,16 @@ and that one for ubuntu
 <ssh -p 2222 nurlanov@127.0.0.1 "ip addr" > labs/lab02-windows-vm/evidence/ip-addr-linux.txt>
 ```
 
-
-
+I try to ping both ways, but an error occurs. The reason is:Windows Defender Firewall blocks incoming echo requests by default. Ana to fix that need to make Windows accept these pings from Ubuntu by adding a single allow rule.we have to type this command in powershell as admin in our vm windows:
+```
+<New-NetFirewallRule -DisplayName "Allow ping in (ICMPv4)" -Protocol ICMPv4 -IcmpType 8 -Direction Inbound -Action Allow>
+```
+After that, I use all these commands to verify. I won’t say where to type what.After that, I use all these commands to verify. I won’t say exactly what to type where, but the full results can be found in the "evidence" folder.
+```
+<ping ubuntu.com>
+<ssh nurlanov@192.168.80.130 "ping -c 4 192.168.80.131; ping -c 4 ubuntu.com" >> labs/lab02-windows-vm/evidence/ping-both-ways.txt>
+<ping 10.0.2.3>
+```
 
 ## Result
 
