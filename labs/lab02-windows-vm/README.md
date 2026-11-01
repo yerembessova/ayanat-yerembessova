@@ -6,7 +6,7 @@ Date: 1/11/2026
 
 ## What I did
 
-I created a separate Windows 11 virtual machine and connected both machines to the same network so they could work together successfully. To make this happen, I ran a specific command on the Ubuntu server that allowed the two machines to see each other.
+I created a separate Windows 11 virtual machine and connected both machines to the same network so they could work together successfully.I used NAT Network because both guests must see each other and the internet, and bridged mode is blocked on campus Wi-Fi. To make this happen, I ran a specific command on the Ubuntu server that allowed the two machines to see each other.
 
 ```
 <sudo reboot>
