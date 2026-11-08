@@ -1,0 +1,41 @@
+﻿
+=== Get-CimInstance Win32_Processor | Select Name, NumberOfCores, NumberOfLogicalProcessors, MaxClockSpeed ===
+
+Name                                     NumberOfCores NumberOfLogicalProcessors MaxClockSpeed
+----                                     ------------- ------------------------- -------------
+Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz             4                         8          2400
+
+
+
+=== Get-CimInstance Win32_PhysicalMemory | Select DeviceLocator, Capacity, Speed, ConfiguredClockSpeed, SMBIOSMemoryType, FormFactor ===
+
+
+DeviceLocator        : ChannelB-DIMM0
+Capacity             : 8589934592
+Speed                : 2400
+ConfiguredClockSpeed : 2400
+SMBIOSMemoryType     : 26
+FormFactor           : 12
+
+
+
+
+=== Get-PhysicalDisk | Select FriendlyName, MediaType, BusType, Size ===
+
+FriendlyName          MediaType BusType         Size
+------------          --------- -------         ----
+KINGSTON SA400S37480G SSD       SATA    480103981056
+RPFTJ128PDD2EWX       SSD       NVMe    128035676160
+
+
+
+=== Get-Volume C ===
+
+DriveLetter FriendlyName FileSystemType DriveType HealthStatus OperationalStatus SizeRemaining      Size
+----------- ------------ -------------- --------- ------------ ----------------- -------------      ----
+C                        NTFS           Fixed     Healthy      OK                     13.05 GB 117.76 GB
+
+
+
+=== $env:PROCESSOR_ARCHITECTURE ===
+AMD64
