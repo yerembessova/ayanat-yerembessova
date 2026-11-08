@@ -14,6 +14,7 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 - https://www.amd.com/en/support/downloads/drivers.html/processors/ryzen/ryzen-7000-series/amd-ryzen-5-7600.html
 
 ### 2. Intel Core i5-13400
+![Intel Core i5-13400](<evidence/photo/Intel Core i5-13400.png>)
 
 **Caption:** A desktop CPU with 10 cores and 16 threads. It connects to an LGA 1700 motherboard socket. It supports DDR4 or DDR5 memory, depending on the motherboard. Its main limitation is compatibility with LGA 1700 motherboards only.
 
@@ -22,6 +23,7 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 - https://www.intel.com/content/www/us/en/products/sku/230495/intel-core-i513400-processor-20m-cache-up-to-4-60-ghz/downloads.html
 
 ### 3. ASUS PRIME B650M-A
+![ASUS PRIME B650M-A](<evidence/photo/ASUS PRIME B650M-A.png>)
 
 **Caption:** A Micro-ATX motherboard that connects the CPU, RAM, storage and other components. It has an AM5 socket, AMD B650 chipset and DDR5 memory support. It supports Ryzen 7000, 8000 and 9000 series processors, subject to BIOS compatibility. It cannot use Intel CPUs or DDR4 memory.
 
@@ -30,6 +32,7 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 - Technical specifications: https://www.asus.com/motherboards-components/motherboards/prime/prime-b650m-a/techspec/
 
 ### 4. MSI PRO B760M-A WIFI DDR4
+![MSI PRO B760M-A WIFI DDR4](<evidence/photo/MSI PRO B760M-A WIFI DDR4.png>)
 
 **Caption:** A Micro-ATX motherboard for Intel desktop processors. It connects the CPU, DDR4 RAM, storage and expansion cards. It uses the LGA 1700 socket and Intel B760 chipset. It supports compatible Intel Core 12th, 13th and 14th generation CPUs, subject to BIOS support. It cannot use DDR5 memory.
 
@@ -38,6 +41,7 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 - Technical specifications: https://www.msi.com/Motherboard/PRO-B760M-A-WIFI-DDR4/Specification
 
 ### 5. Kingston FURY Beast DDR5-5600, 16 GB
+![Kingston FURY Beast DDR5-5600, 16 GB](<evidence/photo/Kingston FURY Beast DDR5-5600, 16 GB.png>)
 
 **Caption:** A 16 GB DDR5 desktop memory module operating at 5600 MT/s. It connects to a 288-pin DDR5 DIMM slot on the motherboard. It temporarily stores data used by the CPU. It is not compatible with DDR4 motherboards.
 
@@ -45,6 +49,7 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 - https://www.kingston.com/en/memory/gaming/kingston-fury-beast-ddr5-memory
 
 ### 6. Crucial DDR4-3200, 16 GB DIMM
+![Crucial DDR4-3200, 16 GB DIMM](<evidence/photo/Crucial DDR4-3200, 16 GB DIMM.png>)
 
 **Caption:** A 16 GB DDR4 desktop memory module operating at 3200 MT/s. It connects to a 288-pin DDR4 DIMM slot. It provides temporary storage for active programs and data. It cannot be installed in DDR5 motherboard slots.
 
@@ -53,6 +58,7 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 - https://www.crucial.com/support
 
 ### 7. Samsung 990 PRO 1 TB
+![Samsung 990 PRO 1 TB](<evidence/photo/Samsung 990 PRO 1 TB.png>)
 
 **Caption:** The Samsung 990 PRO is a high-performance 1 TB NVMe solid-state drive. It connects directly to an M.2 M-key slot on a compatible motherboard using the PCIe interface. It stores the operating system, applications and files. Its main limitation is that it requires a compatible M.2 NVMe slot and cannot connect directly to a SATA-only drive bay.
 
@@ -61,6 +67,7 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 - Official Samsung datasheet: https://download.semiconductor.samsung.com/resources/data-sheet/Samsung_NVMe_SSD_990_PRO_Datasheet_Rev.1.0.pdf
 
 ### 8. Samsung 870 EVO 1 TB
+![Samsung 870 EVO 1 TB](<evidence/photo/Samsung 870 EVO 1 TB.png>)
 
 **Caption:** The Samsung 870 EVO is a 1 TB SATA solid-state drive with a 2.5-inch form factor. It connects to the motherboard through a SATA data cable and receives power through a SATA power connector from the power supply. It stores files, applications and the operating system. Its main limitation is that its SATA interface is slower than modern NVMe PCIe SSDs.
 
@@ -68,6 +75,7 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 - https://www.samsung.com/us/memory-storage/sata-ssd/870-evo-sata-2-5-ssd-1tb-sku-mz-77e1t0b-am/
 
 ### 9. Corsair RM750e 750 W
+![Corsair RM750e (750 W)](<evidence/photo/Corsair RM750e (750 W).png>)
 
 **Caption:** A 750 W ATX power supply that provides electricity to all computer components. It connects to the motherboard, CPU, graphics card and storage devices through power cables. Its limitation is its maximum 750 W output and physical compatibility with the computer case.
 
@@ -80,7 +88,9 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 **Caption:** A stock CPU cooler removes heat from the processor using a heatsink and fan. It attaches to the motherboard's CPU mounting system and connects to the CPU_FAN header. The AMD Ryzen 5 7600 boxed version includes an AMD Wraith Stealth cooler. The boxed Intel Core i5-13400 includes an Intel Laminar RM1 cooler. Each cooler is designed for its compatible processor socket and thermal requirements.
 
 **Manufacturer links:**
+![stock cooler ryzen](<evidence/photo/stock cooler ryzen.png>)
 - AMD Ryzen 5 7600 specifications (lists Wraith Stealth): https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600.html
+- ![stock cooler ryzen](<evidence/photo/stock cooler ryzen.png>)
 - Intel boxed processor contents (confirms the i5-13400 includes the Laminar RM1): https://www.intel.com/content/www/us/en/support/articles/000095154/processors.html
 - Intel cooler installation and compatibility: https://www.intel.com/content/www/us/en/support/articles/000089627/processors.html
 
