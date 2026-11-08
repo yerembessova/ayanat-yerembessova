@@ -83,6 +83,100 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 - Intel boxed processor contents (confirms the i5-13400 includes the Laminar RM1): https://www.intel.com/content/www/us/en/support/articles/000095154/processors.html
 - Intel cooler installation and compatibility: https://www.intel.com/content/www/us/en/support/articles/000089627/processors.html
 
+# Hardware Components and System Build Report
+
+## Step 1 & 2 — Component Specifications and Captions
+
+### 1. Processors
+
+#### AMD Ryzen 5 7600
+![AMD Ryzen 5 7600](evidence/photos/ryzen5-7600.png)  
+**Source:** [AMD Official Page](https://amd.com)  
+**Caption:** 6 cores / 12 threads desktop processor, 3.8 GHz base / 5.1 GHz boost clock, 32 MB L3 cache, 65 W TDP. Connects to an AM5 motherboard socket; its memory controller supports DDR5 memory. Limit: fits only Socket AM5 motherboards (e.g., B650, X670) and works only with DDR5 RAM.
+
+#### Intel Core i5-13400
+![Intel Core i5-13400](evidence/photos/i5-13400.png)  
+**Source:** [Intel Official Page](https://intel.com)  
+**Caption:** 10 cores (6P + 4E) / 16 threads desktop processor, 2.5 GHz base / 4.6 GHz boost clock, 20 MB L3 cache, 65 W base power (TDP). Connects to an LGA 1700 motherboard socket; its memory controller supports DDR4 and DDR5 memory. Limit: fits only Socket LGA 1700 motherboards (Intel 600/700 series) and relies on the board's RAM type.
+
+---
+
+### 2. Motherboards
+
+#### ASUS PRIME B650M-A
+![ASUS PRIME B650M-A](evidence/photos/asus-b650m-a.png)  
+**Source:** [ASUS Product Page](https://asus.com) | [Tech Specs](https://asus.comtechspec/)  
+**Caption:** Micro-ATX motherboard with the AMD B650 chipset. Connects to an AM5 processor, 4× DDR5 DIMM memory slots, 2× M.2 slots (PCIe 5.0/4.0), and 4× SATA 6 Gb/s ports. Limit: supports only AMD Ryzen 7000/8000/9000 series CPUs (on the CPU Support list) and accepts only DDR5 memory.
+
+#### MSI PRO B760M-A WIFI DDR4
+![MSI PRO B760M-A WIFI DDR4](evidence/photos/msi-b760m-a.png)  
+**Source:** [MSI Product Page](https://msi.com) | [Specification](https://msi.com/Specification)  
+**Caption:** Micro-ATX motherboard with the Intel B760 chipset. Connects to an LGA 1700 processor, 4× DDR4 DIMM memory slots, 2× M.2 slots (PCIe 4.0 x4), and 4× SATA 6 Gb/s ports. Limit: supports only 12th/13th/14th Gen Intel Core processors (on the CPU Support list) and accepts only DDR4 memory.
+
+---
+
+### 3. Memory
+
+#### Kingston FURY Beast DDR5-5600, 16 GB
+![Kingston FURY Beast DDR5](evidence/photos/kingston-ddr5.png)  
+**Source:** [Kingston Product Page](https://kingston.com) | [Datasheet PDF](https://kingston.com)  
+**Caption:** DDR5 DIMM memory module, 16 GB, 5600 MT/s, 288 pins. Connects to a desktop DDR5 DIMM slot on the motherboard. Limit: fits only DDR5 motherboards; the key notch position makes DDR4 slots impossible.
+
+#### Crucial DDR4-3200, 16 GB DIMM
+![Crucial DDR4](evidence/photos/crucial-ddr4.png)  
+**Source:** [Crucial Product Page](https://crucial.com)  
+**Caption:** DDR4 DIMM memory module, 16 GB, 3200 MT/s, 288 pins. Connects to a desktop DDR4 DIMM slot on the motherboard. Limit: fits only DDR4 motherboards; the key notch position makes DDR5 slots impossible.
+
+---
+
+### 4. SSDs
+
+#### Samsung 990 PRO 1 TB
+![Samsung 990 PRO](evidence/photos/samsung-990pro.png)  
+**Source:** [Samsung NVMe SSD Page](https://samsung.com)  
+**Caption:** 1 TB SSD, NVMe PCIe 4.0 x4 interface, M.2 2280 form factor, up to 7,450 MB/s read and 6,900 MB/s write speed. Connects to an M.2 (M-key) slot on the motherboard. Limit: maximum transfer speed is capped by the PCIe generation of the M.2 slot (e.g., ~3,500 MB/s on PCIe 3.0).
+
+#### Samsung 870 EVO 1 TB
+![Samsung 870 EVO](evidence/photos/samsung-870evo.png)  
+**Source:** [Samsung SATA SSD Page](https://samsung.com)  
+**Caption:** 1 TB SSD, SATA III (6 Gb/s) interface, 2.5-inch form factor, up to 560 MB/s read and 530 MB/s write speed. Connects to a motherboard SATA port via a SATA data cable plus a SATA power cable from the PSU. Limit: the SATA III bus caps real-world transfer speeds at about 550 MB/s.
+
+---
+
+### 5. Power and Cooling
+
+#### Corsair RM750e (750 W)
+![Corsair RM750e](evidence/photos/corsair-rm750e.png)  
+**Source:** [Corsair Product Page](https://corsair.com)  
+**Caption:** 750 W power supply, 80 PLUS Gold efficiency rating, ATX 3.0 standard, fully modular. Connects to the motherboard (24-pin ATX and 8-pin CPU cables), drives (SATA power), and graphics card (PCIe / 12V-2x6). Limit: total system power draw cannot exceed 750 W.
+
+#### Stock Processors Coolers (AMD Wraith Stealth & Intel Laminar RM1)
+![Stock Coolers](evidence/photos/stock-coolers.png)  
+**Source:** [AMD Thermal Solutions](https://amd.com) | [Intel Laminar Coolers Overview](https://intel.com)  
+**Caption:** AMD Wraith Stealth (included with boxed Ryzen 5 7600) / Intel Laminar RM1 (included with boxed Core i5-13400) stock air coolers. Connects to the processor's socket mounting holes (AM5 or LGA 1700) and the CPU_FAN header. Limit: rated for up to 65 W TDP processors, so they cannot safely cool high-wattage or overclocked CPUs.
+
+---
+
+## Step 3 — Motherboards Deep Dive
+
+### 1. ASUS PRIME B650M-A
+* **Socket:** AMD Socket AM5
+* **Chipset:** AMD B650
+* **Memory:** DDR5, 4× DIMM slots (dual-channel, supports AMD EXPO profiles)
+* **Storage connections:** 2× M.2 slots (Key M, type 2242/2260/2280 — 1× PCIe 5.0 x4, 1× PCIe 4.0 x4) and 4× SATA 6 Gb/s ports
+* **Supported processor generations:** 
+  * AMD Ryzen 7000 Series (supported out of the box).
+  * AMD Ryzen 8000 and 9000 Series (requires a BIOS update).
+
+### 2. MSI PRO B760M-A WIFI DDR4
+* **Socket:** Intel Socket LGA 1700
+* **Chipset:** Intel B760
+* **Memory:** DDR4, 4× DIMM slots (dual-channel, supports Intel XMP profiles)
+* **Storage connections:** 2× M.2 slots (Key M, type 2242/2260/2280 — both PCIe 4.0 x4) and 4× SATA 6 Gb/s ports
+* **Supported processor generations:** 
+  * 12th Gen Intel Core and 13th Gen Intel Core (supported out of the box).
+  * 14th Gen Intel Core (requires a BIOS update).
+
 ## Two builds
 
 ### Build 1 — AMD Ryzen System
