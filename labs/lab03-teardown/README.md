@@ -5,6 +5,7 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 ## Part 1 — Ten parts
 
 ### 1. AMD Ryzen 5 7600
+![AMD Ryzen 5 7600](evidence/photo/ryzen5-7600.png)
 
 **Caption:** A desktop CPU with 6 cores and 12 threads. It connects to the AM5 socket on a compatible motherboard. It supports DDR5 memory. Its main limitation is that it cannot be installed in Intel or older AMD sockets.
 
