@@ -132,19 +132,32 @@ What each build still needs:
 
 Both computers need a PC case, monitor, keyboard, mouse and operating system. Additional case fans may be needed for proper airflow. A dedicated graphics card is optional because both processors have integrated graphics.
 
-## Part 2 — Same facts, two computing environments
-Hardware fact	Windows Host	Linux VM
-CPU	AMD Ryzen 5 7535HS	AMD Ryzen 5 7535HS (virtualized)
-CPU cores / vCPUs	6 physical cores	4 virtual CPUs
-Logical processors	12	4
-Architecture	x86_64	x86_64
-RAM	16 GB	1.6 GiB
-Memory speed	5600 MT/s (configured at 4800 MT/s)	Not reported
-Storage	512 GB Kingston NVMe SSD	25 GB virtual disk
-Filesystem	NTFS	Linux filesystem
-Environment	Physical computer	Virtual machine
+## Part 2 — Same facts, three operating systems
 
-Windows and Linux use different commands and tools to display hardware information. Windows uses PowerShell commands such as Get-CimInstance, while Linux uses lscpu, free -h and lsblk. Linux runs inside a virtual machine, so it sees allocated virtual resources rather than all the physical resources of the host computer.
+| Fact | Windows (PowerShell) | Linux (Ubuntu VM) | macOS |
+| :--- | :--- | :--- | :--- |
+| **CPU model** | `Get-CimInstance Win32_Processor` → Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz | `lscpu` → Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz | `sysctl -n machdep.cpu.brand_string` → *(N/A — no Mac in pair)* |
+| **Cores / threads** | `Get-CimInstance Win32_Processor` → 4 cores / 8 logical processors | `lscpu` → 2 cores / 2 threads (`CPU(s): 2`, 1 thread/core) | `sysctl -n hw.physicalcpu hw.logicalcpu` → *(N/A)* |
+| **Total memory** | `Get-CimInstance Win32_PhysicalMemory` → 8 GB (8589934592 bytes) | `free -h` → 3.2 GiB | `sysctl -n hw.memsize` → *(N/A)* |
+| **Memory modules and speed** | `Get-CimInstance Win32_PhysicalMemory` → 8 GB DDR4 @ 2400 MHz (SODIMM) | `sudo dmidecode -t memory` → Not exposed by VM (`SMBIOS 2.5 present`, no DIMM info) | `system_profiler SPMemoryDataType` → *(N/A)* |
+| **Disk model and type** | `Get-PhysicalDisk` → KINGSTON SA400S37480G (SSD, SATA) & NVMe SSD (128 GB) | `lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE` → `VBOX HARDDISK` (20G, SATA, `ROTA=1`) | `diskutil list` / `system_profiler SPNVMeDataType` → *(N/A)* |
+| **Free space** | `Get-Volume C` → Drive `C:` free / total space (see `windows-specs.txt`) | `df -h /` → 5.1G free out of 12G (`53%` used on `/`) | `df -h /` → *(N/A)* |
+| **Architecture (x86-64 / ARM64)** | `$env:PROCESSOR_ARCHITECTURE` → `AMD64` | `uname -m` → `x86_64` | `uname -m` → *(N/A)* |
+
+The three operating systems use different names for the exact same hardware concepts: Windows calls the 64-bit architecture `AMD64` and reports `LogicalProcessors`, while Linux uses `x86_64` and `CPU(s)` (and macOS uses `arm64` or `x86_64`). Inside the VirtualBox VM, Linux saw virtualized hardware rather than the host's physical parts: it showed only 2 CPU cores and 3.2 GiB of RAM instead of the host's 4 cores / 8 threads and 8 GB of RAM, hid physical DIMM speed in `dmidecode`, and reported a 20 GB `VBOX HARDDISK` with `ROTA=1` (rotational) even though the host uses physical SSDs.
+
+## What did not work the first time
+
+- **Stock cooler check in Part 1:** At first, it was unclear whether the "stock cooler" in the parts list was a separate retail product or included with the CPUs. Checking the *Thermal Solution* line in the official AMD and Intel specification pages confirmed that boxed versions of both processors include stock coolers (AMD Wraith Stealth and Intel Laminar RM1).
+- **Saving PowerShell output in Part 2:** Running the `Get-CimInstance` commands directly printed the hardware info to the console without creating `windows-specs.txt`; piping each command through `Out-File -Encoding utf8 -Append` inside a loop solved this and saved clean UTF-8 output.
+- **Transferring `linux-specs.txt` via `scp`:** Trying to copy from the VM's internal NAT IP (`10.0.2.15`) failed to connect from Windows, and omitting the port number caused a syntax error. Connecting through VirtualBox's forwarded localhost port (`scp -P 2222 yan@127.0.0.1:~/linux-specs.txt .`) transferred the file immediately.
+
+## Evidence
+
+- `evidence/windows-specs.txt` — PowerShell hardware specification commands and output collected on the Windows host.
+- `evidence/linux-specs.txt` — Linux CLI hardware specification commands (`lscpu`, `free`, `dmidecode`, `lsblk`, `df`, `uname`) and output collected inside the Ubuntu VirtualBox VM.
+- `evidence/photos/` — Official product images for all ten hardware components in Part 1.
+
 
 ## What did not work the first time
 
