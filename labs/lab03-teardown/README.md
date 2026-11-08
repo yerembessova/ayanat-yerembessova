@@ -90,12 +90,12 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 ### 1. Processors
 
 #### AMD Ryzen 5 7600
-![AMD Ryzen 5 7600](evidence/photos/ryzen5-7600.png)  
+![AMD Ryzen 5 7600](labs/lab03-teardown/evidence/photo/ryzen5-7600.png)  
 **Source:** [AMD Official Page](https://amd.com)  
 **Caption:** 6 cores / 12 threads desktop processor, 3.8 GHz base / 5.1 GHz boost clock, 32 MB L3 cache, 65 W TDP. Connects to an AM5 motherboard socket; its memory controller supports DDR5 memory. Limit: fits only Socket AM5 motherboards (e.g., B650, X670) and works only with DDR5 RAM.
 
 #### Intel Core i5-13400
-![Intel Core i5-13400](evidence/photos/i5-13400.png)  
+![Intel Core i5-13400](labs/lab03-teardown/evidence/photo/Intel Core i5-13400.png)  
 **Source:** [Intel Official Page](https://intel.com)  
 **Caption:** 10 cores (6P + 4E) / 16 threads desktop processor, 2.5 GHz base / 4.6 GHz boost clock, 20 MB L3 cache, 65 W base power (TDP). Connects to an LGA 1700 motherboard socket; its memory controller supports DDR4 and DDR5 memory. Limit: fits only Socket LGA 1700 motherboards (Intel 600/700 series) and relies on the board's RAM type.
 
@@ -104,12 +104,12 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 ### 2. Motherboards
 
 #### ASUS PRIME B650M-A
-![ASUS PRIME B650M-A](evidence/photos/asus-b650m-a.png)  
+![ASUS PRIME B650M-A](labs/lab03-teardown/evidence/photo/ASUS PRIME B650M-A.png)  
 **Source:** [ASUS Product Page](https://asus.com) | [Tech Specs](https://asus.comtechspec/)  
 **Caption:** Micro-ATX motherboard with the AMD B650 chipset. Connects to an AM5 processor, 4× DDR5 DIMM memory slots, 2× M.2 slots (PCIe 5.0/4.0), and 4× SATA 6 Gb/s ports. Limit: supports only AMD Ryzen 7000/8000/9000 series CPUs (on the CPU Support list) and accepts only DDR5 memory.
 
 #### MSI PRO B760M-A WIFI DDR4
-![MSI PRO B760M-A WIFI DDR4](evidence/photos/msi-b760m-a.png)  
+![MSI PRO B760M-A WIFI DDR4](labs/lab03-teardown/evidence/photo/MSI PRO B760M-A WIFI DDR4.png)  
 **Source:** [MSI Product Page](https://msi.com) | [Specification](https://msi.com/Specification)  
 **Caption:** Micro-ATX motherboard with the Intel B760 chipset. Connects to an LGA 1700 processor, 4× DDR4 DIMM memory slots, 2× M.2 slots (PCIe 4.0 x4), and 4× SATA 6 Gb/s ports. Limit: supports only 12th/13th/14th Gen Intel Core processors (on the CPU Support list) and accepts only DDR4 memory.
 
@@ -118,12 +118,12 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 ### 3. Memory
 
 #### Kingston FURY Beast DDR5-5600, 16 GB
-![Kingston FURY Beast DDR5](evidence/photos/kingston-ddr5.png)  
+![Kingston FURY Beast DDR5](labs/lab03-teardown/evidence/photo/Kingston FURY Beast DDR5-5600, 16 GB.png)  
 **Source:** [Kingston Product Page](https://kingston.com) | [Datasheet PDF](https://kingston.com)  
 **Caption:** DDR5 DIMM memory module, 16 GB, 5600 MT/s, 288 pins. Connects to a desktop DDR5 DIMM slot on the motherboard. Limit: fits only DDR5 motherboards; the key notch position makes DDR4 slots impossible.
 
 #### Crucial DDR4-3200, 16 GB DIMM
-![Crucial DDR4](evidence/photos/crucial-ddr4.png)  
+![Crucial DDR4](labs/lab03-teardown/evidence/photo/Crucial DDR4-3200, 16 GB DIMM.png)  
 **Source:** [Crucial Product Page](https://crucial.com)  
 **Caption:** DDR4 DIMM memory module, 16 GB, 3200 MT/s, 288 pins. Connects to a desktop DDR4 DIMM slot on the motherboard. Limit: fits only DDR4 motherboards; the key notch position makes DDR5 slots impossible.
 
@@ -132,12 +132,12 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 ### 4. SSDs
 
 #### Samsung 990 PRO 1 TB
-![Samsung 990 PRO](evidence/photos/samsung-990pro.png)  
+![Samsung 990 PRO](labs/lab03-teardown/evidence/photo/Samsung 990 PRO 1 TB.png)  
 **Source:** [Samsung NVMe SSD Page](https://samsung.com)  
 **Caption:** 1 TB SSD, NVMe PCIe 4.0 x4 interface, M.2 2280 form factor, up to 7,450 MB/s read and 6,900 MB/s write speed. Connects to an M.2 (M-key) slot on the motherboard. Limit: maximum transfer speed is capped by the PCIe generation of the M.2 slot (e.g., ~3,500 MB/s on PCIe 3.0).
 
 #### Samsung 870 EVO 1 TB
-![Samsung 870 EVO](evidence/photos/samsung-870evo.png)  
+![Samsung 870 EVO](labs/lab03-teardown/evidence/photo/Samsung 870 EVO 1 TB.png)  
 **Source:** [Samsung SATA SSD Page](https://samsung.com)  
 **Caption:** 1 TB SSD, SATA III (6 Gb/s) interface, 2.5-inch form factor, up to 560 MB/s read and 530 MB/s write speed. Connects to a motherboard SATA port via a SATA data cable plus a SATA power cable from the PSU. Limit: the SATA III bus caps real-world transfer speeds at about 550 MB/s.
 
