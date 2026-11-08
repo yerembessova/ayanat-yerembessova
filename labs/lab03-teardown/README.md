@@ -136,15 +136,15 @@ Both computers need a PC case, monitor, keyboard, mouse and operating system. Ad
 
 | Fact | Windows (PowerShell) | Linux (Ubuntu VM) | macOS |
 | :--- | :--- | :--- | :--- |
-| **CPU model** | `Get-CimInstance Win32_Processor` → Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz | `lscpu` → Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz | `sysctl -n machdep.cpu.brand_string` → *(N/A — no Mac in pair)* |
-| **Cores / threads** | `Get-CimInstance Win32_Processor` → 4 cores / 8 logical processors | `lscpu` → 2 cores / 2 threads (`CPU(s): 2`, 1 thread/core) | `sysctl -n hw.physicalcpu hw.logicalcpu` → *(N/A)* |
-| **Total memory** | `Get-CimInstance Win32_PhysicalMemory` → 8 GB (8589934592 bytes) | `free -h` → 3.2 GiB | `sysctl -n hw.memsize` → *(N/A)* |
-| **Memory modules and speed** | `Get-CimInstance Win32_PhysicalMemory` → 8 GB DDR4 @ 2400 MHz (SODIMM) | `sudo dmidecode -t memory` → Not exposed by VM (`SMBIOS 2.5 present`, no DIMM info) | `system_profiler SPMemoryDataType` → *(N/A)* |
-| **Disk model and type** | `Get-PhysicalDisk` → KINGSTON SA400S37480G (SSD, SATA) & NVMe SSD (128 GB) | `lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE` → `VBOX HARDDISK` (20G, SATA, `ROTA=1`) | `diskutil list` / `system_profiler SPNVMeDataType` → *(N/A)* |
-| **Free space** | `Get-Volume C` → Drive `C:` free / total space (see `windows-specs.txt`) | `df -h /` → 5.1G free out of 12G (`53%` used on `/`) | `df -h /` → *(N/A)* |
-| **Architecture (x86-64 / ARM64)** | `$env:PROCESSOR_ARCHITECTURE` → `AMD64` | `uname -m` → `x86_64` | `uname -m` → *(N/A)* |
+| **CPU model** | `Get-CimInstance Win32_Processor` → Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz | `lscpu` → Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz | — |
+| **Cores / threads** | `Get-CimInstance Win32_Processor` → 4 cores / 8 logical processors | `lscpu` → 2 cores / 2 threads (`CPU(s): 2`, 1 thread/core) | — |
+| **Total memory** | `Get-CimInstance Win32_PhysicalMemory` → 8 GB (8589934592 bytes) | `free -h` → 3.2 GiB | — |
+| **Memory modules and speed** | `Get-CimInstance Win32_PhysicalMemory` → 8 GB DDR4 @ 2400 MHz (SODIMM) | `sudo dmidecode -t memory` → Not exposed by VM (`SMBIOS 2.5 present`, no DIMM info) | — |
+| **Disk model and type** | `Get-PhysicalDisk` → KINGSTON SA400S37480G (SSD, SATA) & NVMe SSD (128 GB) | `lsblk -d -o NAME,MODEL,ROTA,TRAN,SIZE` → `VBOX HARDDISK` (20G, SATA, `ROTA=1`) | — |
+| **Free space** | `Get-Volume C` → Drive `C:` free / total space (see `windows-specs.txt`) | `df -h /` → 5.1G free out of 12G (`53%` used on `/`) | — |
+| **Architecture (x86-64 / ARM64)** | `$env:PROCESSOR_ARCHITECTURE` → `AMD64` | `uname -m` → `x86_64` | — |
 
-The three operating systems use different names for the exact same hardware concepts: Windows calls the 64-bit architecture `AMD64` and reports `LogicalProcessors`, while Linux uses `x86_64` and `CPU(s)` (and macOS uses `arm64` or `x86_64`). Inside the VirtualBox VM, Linux saw virtualized hardware rather than the host's physical parts: it showed only 2 CPU cores and 3.2 GiB of RAM instead of the host's 4 cores / 8 threads and 8 GB of RAM, hid physical DIMM speed in `dmidecode`, and reported a 20 GB `VBOX HARDDISK` with `ROTA=1` (rotational) even though the host uses physical SSDs.
+The operating systems use different names for the exact same hardware concepts: Windows calls the 64-bit architecture `AMD64` and reports `LogicalProcessors`, while Linux uses `x86_64` and `CPU(s)` *(no macOS machine was available in our pair)*. Inside the VirtualBox VM, Linux saw virtualized hardware rather than the host's physical parts: it showed only 2 CPU cores and 3.2 GiB of RAM instead of the host's 4 cores / 8 threads and 8 GB of RAM, hid physical DIMM speed in `dmidecode`, and reported a 20 GB `VBOX HARDDISK` with `ROTA=1` (rotational) even though the host uses physical SSDs.
 
 ## What did not work the first time
 
