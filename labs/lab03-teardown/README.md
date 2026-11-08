@@ -151,17 +151,9 @@ The operating systems use different names for the exact same hardware concepts: 
 Transferring `linux-specs.txt` via `scp`:** Trying to copy from the VM's internal NAT IP (`10.0.2.15`) failed to connect from Windows, and omitting the port number caused a syntax error. Connecting through VirtualBox's forwarded localhost port (`scp -P 2222 yan@127.0.0.1:~/linux-specs.txt .`) transferred the file immediately.
 
 ## Evidence
+- [evidence/windows-specs.txt](evidence/windows-specs.txt) — windows specs
+- [evidence/linux-specs.txt](evidence/linux-specs.txt) — linux specs
 
-- `evidence/windows-specs.txt` — PowerShell hardware specification commands and output collected on the Windows host.
-- `evidence/linux-specs.txt` — Linux CLI hardware specification commands (`lscpu`, `free`, `dmidecode`, `lsblk`, `df`, `uname`) and output collected inside the Ubuntu VirtualBox VM.
-- `evidence/photos/` — Official product images for all ten hardware components in Part 1.
-
-
-## What did not work the first time
-
-Copying and pasting commands in the Linux environment did not work at first. Because of this, I had to type all the commands manually when creating the `linux-specs.txt` file. I did not experience this problem in Windows, where copying and pasting worked correctly.
-## Evidence
-- evidence/windows-specs.txt - evidence/linux-specs.txt
 
 
 
