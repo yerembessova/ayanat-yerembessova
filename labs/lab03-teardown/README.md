@@ -148,9 +148,7 @@ The operating systems use different names for the exact same hardware concepts: 
 
 ## What did not work the first time
 
-- **Stock cooler check in Part 1:** At first, it was unclear whether the "stock cooler" in the parts list was a separate retail product or included with the CPUs. Checking the *Thermal Solution* line in the official AMD and Intel specification pages confirmed that boxed versions of both processors include stock coolers (AMD Wraith Stealth and Intel Laminar RM1).
-- **Saving PowerShell output in Part 2:** Running the `Get-CimInstance` commands directly printed the hardware info to the console without creating `windows-specs.txt`; piping each command through `Out-File -Encoding utf8 -Append` inside a loop solved this and saved clean UTF-8 output.
-- **Transferring `linux-specs.txt` via `scp`:** Trying to copy from the VM's internal NAT IP (`10.0.2.15`) failed to connect from Windows, and omitting the port number caused a syntax error. Connecting through VirtualBox's forwarded localhost port (`scp -P 2222 yan@127.0.0.1:~/linux-specs.txt .`) transferred the file immediately.
+Transferring `linux-specs.txt` via `scp`:** Trying to copy from the VM's internal NAT IP (`10.0.2.15`) failed to connect from Windows, and omitting the port number caused a syntax error. Connecting through VirtualBox's forwarded localhost port (`scp -P 2222 yan@127.0.0.1:~/linux-specs.txt .`) transferred the file immediately.
 
 ## Evidence
 
