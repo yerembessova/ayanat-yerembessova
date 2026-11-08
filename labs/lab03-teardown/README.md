@@ -90,7 +90,7 @@ Pair: Anuarhan + Ayanat · Date: 11/7/2026
 **Manufacturer links:**
 ![stock cooler ryzen](<evidence/photo/stock cooler ryzen.png>)
 - AMD Ryzen 5 7600 specifications (lists Wraith Stealth): https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-5-7600.html
-- ![stock cooler ryzen](<evidence/photo/stock cooler ryzen.png>)
+- ![stock cooler intel](<evidence/photo/stock cooler intel.png>)
 - Intel boxed processor contents (confirms the i5-13400 includes the Laminar RM1): https://www.intel.com/content/www/us/en/support/articles/000095154/processors.html
 - Intel cooler installation and compatibility: https://www.intel.com/content/www/us/en/support/articles/000089627/processors.html
 
