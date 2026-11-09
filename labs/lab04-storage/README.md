@@ -2,10 +2,9 @@
 
 Pair: Ayanat + Anuarkhan · Date: 9/11/2026 · Hypervisor: VirtualBox
 
-## 1. Windows Guest
+## Windows
 
-### Partitioning and Formatting Output
-A new 1 GB virtual disk (`lab04-win.vdi`) was attached to the Windows guest, initialized with GPT, partitioned to maximum size, and formatted as NTFS with the label `LAB04` (Drive Letter `E:`).
+A new 1 GB virtual disk (`lab04-win.vdi`) was attached to the Windows guest, initialized with GPT, partitioned to maximum size, and formatted as NTFS with the label `LAB04` (Drive Letter `E:`).Just so you know, I’ve connected the Ubuntu console to PowerShell to make it easier for me to paste commands. That’s why the documents look the way they do.
 
 ```powershell
 PS C:\Windows\system32> Get-Disk | Select-Object Number, FriendlyName, PartitionStyle, Size
@@ -23,13 +22,13 @@ E           LAB04        NTFS           Fixed     Healthy      OK               
 ```
 
 ### Question: MBR or GPT — and why?
-**GPT (GUID Partition Table)** was chosen over MBR. GPT is the modern standard required for UEFI boot, supports disks larger than 2 TB, allows up to 128 primary partitions, and stores a backup copy of the partition table at the end of the disk along with CRC32 checksums to detect corruption.
+GPT  was chosen over MBR. It was set to that by default, and the guide said you could choose any one you wanted
 
 ---
 
-## 2. Linux Guest (Ubuntu)
+## Linux — layout before and after
 
-### Disks Before (`lsblk`)
+### Before
 Three 1 GB virtual disks (`sdb`, `sdc`, `sdd`) were attached to the Ubuntu guest.
 
 ```text
@@ -44,7 +43,7 @@ sdc                         1G disk
 sdd                         1G disk             
 ```
 
-### Disks After RAID 1 Rebuild (`lsblk`)
+### After
 A RAID 1 array (`/dev/md0`) was built using `sdb1` and `sdc1`, formatted with `ext4` (`mirror`), and mounted at `/mnt/mirror`. After simulating a failure on `sdc1`, the spare partition `sdd1` was added to rebuild the mirror.
 
 ```text
@@ -64,31 +63,46 @@ sdd                         1G disk
   └─md0                  1021M raid1 ext4              /mnt/mirror
 ```
 
-### Question: Why is RAID not a backup?
-**RAID provides availability and hardware fault tolerance, not data protection.** While RAID 1 mirrors data across two disks so the system survives a physical drive failure without downtime, any accidental file deletion, filesystem corruption, ransomware attack, or malicious modification is immediately replicated to all drives in the array. A true backup requires an independent, isolated copy of data stored separately (ideally offline or offsite) with versioning.
+## What I did
 
----
+### 1. Partition and Create RAID 1 Array
+```bash
+for d in sdb sdc sdd; do
+  sudo parted -s /dev/\$d mklabel gpt mkpart primary 1MiB 100% set 1 raid on
+done
+sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb1 /dev/sdc1
+sudo mkfs.ext4 -L mirror /dev/md0
+sudo mkdir -p /mnt/mirror
+sudo mount /dev/md0 /mnt/mirror
+```
 
-## 3. Evidence Files
-All raw outputs are stored unedited inside the `evidence/` directory:
-* `evidence/lsblk-before.txt`
-* `evidence/array-healthy.txt`
-* `evidence/checksum-before.txt`
-* `evidence/array-degraded.txt`
-* `evidence/checksum-after-failure.txt`
-* `evidence/array-rebuilt.txt`
+### 2. Simulate Disk Failure
+```bash
+sudo mdadm /dev/md0 --fail /dev/sdc1
+sudo mdadm /dev/md0 --remove /dev/sdc1
+```
 
----
-
-## 4. What Did Not Work the First Time
-1. **Windows PowerShell Permissions:** Running disk initialization and partitioning commands in a standard user PowerShell session resulted in a `PermissionDenied` error. Launching PowerShell as Administrator (`C:\Windows\system32>`) resolved the issue.
-2. **Linux Terminal Paste Escape Codes & `lsblk` Syntax:** Copying multi-line commands directly from the PDF guide introduced bracketed paste characters (`^[[200~`) and spaces after commas in `lsblk -o NAME, SIZE...`, causing syntax errors. Additionally, trying to run `mdadm --remove` before `mdadm --fail` triggered a `Device or resource busy` error. Running clean single-line commands in the proper order (`--fail` first, then `--remove`) fixed the problem.
+### 3. Rebuild Array with Spare Disk
+```bash
+sudo mdadm /dev/md0 --add /dev/sdd1
+sudo mdadm --detail --scan | sudo tee -a /etc/mdadm/mdadm.conf
+sudo update-initramfs -u
+```
 
 
+## Three states
+
+| State | What /proc/mdstat showed | File |
+| --- | --- | --- |
+| Healthy | [2/2] [UU] | evidence/array-healthy.txt |
+| Degraded | [2/1] [U_] | evidence/array-degraded.txt |
+| Rebuilt | [2/2] [UU], sdd1 replaced sdc1 | evidence/array-rebuilt.txt |
+Checksums before and after the failure: match
 
 ## RAID is not a backup
 Your colleague deleted the wrong file from the mirror an hour ago. Does RAID 1 help? Why?
-<three sentences>
+No, RAID 1 does not help in this situation. RAID 1 only protects against physical drive failure by mirroring every disk operation in real time, so the deletion command was immediately replicated to both drives in the array. To recover an accidentally deleted file, you need an independent backup with version history rather than a redundant disk array.
 
 ## What did not work the first time
-<at least one real thing: what you saw, what it was, what you did>
+When running `Initialize-Disk` and `New-Partition` in Windows PowerShell, I saw a `PermissionDenied` error. It happened because the terminal was opened as a standard user (`PS C:\Users\Jane>`) without administrative privileges to modify disk partitions. I closed the window, launched PowerShell as Administrator (`C:\Windows\system32>`), and the commands succeeded!
+
