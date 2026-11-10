@@ -42,9 +42,8 @@ iconv -f <SOURCE> -t UTF-8 "$in" > "$out"        # 1. encoding
 ```
 
 ## Verification
-* **Output of `file evidence/staff-fixed.csv` (`evidence/file-after.txt`):** `Unicode text, UTF-8 (with BOM) text, with CRLF line terminators`.
-* **Hex dump verification:** The file now starts with the UTF-8 BOM bytes `efbb bf` followed by `49 44 3b` (`ID;`) and standard two-byte UTF-8 sequences (`d0`/`d1`, e.g., `d0 a4` for `Ф`, `d0 b0` for `а`) instead of single-byte RK1048 characters.
-* **Visual check:** Opening `evidence/staff-fixed.csv` in the Linux terminal (`cat`), Microsoft Excel (via double-click), and LibreOffice Calc displays all Russian and Kazakh letters cleanly without corruption.
+Output of `file evidence/staff-fixed.csv` :** `Unicode text, UTF-8 (with BOM) text, with CRLF line terminators`. The file now starts with the UTF-8 BOM bytes `efbb bf` followed by `49 44 3b` (`ID;`) and standard two-byte UTF-8 sequences instead of single-byte RK1048 characters.
+
 
 ![Opens correctly across all apps](evidence/opens-correctly.png)
 
