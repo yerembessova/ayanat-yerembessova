@@ -5,16 +5,17 @@ Name: Ayanat · Date: 10/11/2026 · Tools: Ubuntu guest but I connected it to Po
 ## What I received
 Excel
 
-| ID | Фамилия | Имя | Отдел | Должность | Город |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 101 | Jбдірахманова | Аружан | Бухгалтерия | Главный бухгалтер | Алматы |
+<img width="554" height="453" alt="image" src="https://github.com/user-attachments/assets/8b8f2327-0cc8-4c9d-861c-dc8a80eeffaa" />
 
 LibreOffice
 
-<img width="658" height="61" alt="image" src="https://github.com/user-attachments/assets/f82edf73-4fb9-4585-a4ba-fdd314474c07" />
+<img width="666" height="306" alt="image" src="https://github.com/user-attachments/assets/354ec9e3-2d72-4fc1-a7c5-7ebf516dcc61" />
+
+Terminal
+
+<img width="698" height="326" alt="image" src="https://github.com/user-attachments/assets/9814339b-76f9-4518-9d73-7bfdda9bfb3a" />
 
 
-<how it looked in Excel, LibreOffice and the terminal — one line each>
 
 ## Diagnosis (made before the fix)
 - file said: <…>  (evidence/file-before.txt)
