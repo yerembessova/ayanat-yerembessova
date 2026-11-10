@@ -3,15 +3,18 @@
 Name: Ayanat · Date: 10/11/2026 · Tools: Ubuntu guest but I connected it to PowerShell to make it easier for me to paste commands.
 
 ## What I received
-Excel
+### Excel
+it reads Russian words correctly, but corrupts specific Kazakh letters
 
 <img width="554" height="453" alt="image" src="https://github.com/user-attachments/assets/8b8f2327-0cc8-4c9d-861c-dc8a80eeffaa" />
 
-LibreOffice
+### LibreOffice
+it automatically selects a Cyrillic encoding (Windows-1251) in the import dialog, which similarly results in the corruption of Kazakh characters.
 
 <img width="666" height="306" alt="image" src="https://github.com/user-attachments/assets/354ec9e3-2d72-4fc1-a7c5-7ebf516dcc61" />
 
 Terminal
+white diamonds with question marks (�) appear in place of all Russian and Kazakh letters, as the terminal expects UTF-8 encoding.
 
 <img width="698" height="326" alt="image" src="https://github.com/user-attachments/assets/9814339b-76f9-4518-9d73-7bfdda9bfb3a" />
 
