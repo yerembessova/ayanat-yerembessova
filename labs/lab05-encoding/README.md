@@ -4,9 +4,11 @@ Name: Ayanat · Date: 10/11/2026 · Tools: Ubuntu guest but I connected it to Po
 
 ## What I received
 Excel
-|ID|Фамилия|Аянат|Отдел|Должность|Город|
-|---|---|---||---|---|---|
-|101|Јбдірахманова|Аружан|Бухгалтерия|Главный бухгалтер|Алматы|
+
+| ID | Фамилия | Имя | Отдел | Должность | Город |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 101 | Әбдірахманова | Аружан | Бухгалтерия | Главный бухгалтер | Алматы |
+
 <how it looked in Excel, LibreOffice and the terminal — one line each>
 
 ## Diagnosis (made before the fix)
