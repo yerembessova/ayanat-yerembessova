@@ -1,24 +1,26 @@
 # Lab 5 — Encoding forensics
 
-Pair:                     Driver first half:
-Machine:
-Date:
+Name: Ayanat · Date: 10/11/2026 · Tools: Ubuntu guest but I connected it to PowerShell to make it easier for me to paste commands.
 
-## What I did
+## What I received
+Excel
+|ID|Фамилия|Аянат|Отдел|Должность|Город|
+|---|---|---||---|---|---|
+|101|Јбдірахманова|Аружан|Бухгалтерия|Главный бухгалтер|Алматы|
+<how it looked in Excel, LibreOffice and the terminal — one line each>
 
-Steps, with commands in code blocks. Not prose about the steps.
+## Diagnosis (made before the fix)
+- file said: <…>  (evidence/file-before.txt)
+- First 16 bytes: <hex>  (evidence/hexdump-before.txt)
+- Encoding: <exact name> — because <bytes>
+- Line ending: <CRLF / LF> — because <bytes>
+- BOM: <yes / no> — because <bytes>; in the fixed file I <kept / removed / added> it because <reason>
 
-```
-<command>
-<output, trimmed>
-```
+## Fix
+<the command or scripts/fix.sh, in a code block>
 
-## Result
+## Verification
+<file-after.txt summary; the screenshot evidence/opens-correctly.png>
 
 ## What did not work the first time
-
-At least one thing. What I saw, what it turned out to be, what I did about it.
-
-## Evidence
-
-- [evidence/](evidence/) — one line per file on what it proves
+<at least one real thing>
