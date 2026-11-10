@@ -13,7 +13,7 @@ it automatically selects a Cyrillic encoding (Windows-1251) in the import dialog
 
 <img width="666" height="306" alt="image" src="https://github.com/user-attachments/assets/354ec9e3-2d72-4fc1-a7c5-7ebf516dcc61" />
 
-Terminal
+### Terminal
 white diamonds with question marks (�) appear in place of all Russian and Kazakh letters, as the terminal expects UTF-8 encoding.
 
 <img width="698" height="326" alt="image" src="https://github.com/user-attachments/assets/9814339b-76f9-4518-9d73-7bfdda9bfb3a" />
