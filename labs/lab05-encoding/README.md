@@ -42,7 +42,12 @@ iconv -f <SOURCE> -t UTF-8 "$in" > "$out"        # 1. encoding
 ```
 
 ## Verification
-<file-after.txt summary; the screenshot evidence/opens-correctly.png>
+* **Output of `file evidence/staff-fixed.csv` (`evidence/file-after.txt`):** `Unicode text, UTF-8 (with BOM) text, with CRLF line terminators`.
+* **Hex dump verification:** The file now starts with the UTF-8 BOM bytes `efbb bf` followed by `49 44 3b` (`ID;`) and standard two-byte UTF-8 sequences (`d0`/`d1`, e.g., `d0 a4` for `Ф`, `d0 b0` for `а`) instead of single-byte RK1048 characters.
+* **Visual check:** Opening `evidence/staff-fixed.csv` in the Linux terminal (`cat`), Microsoft Excel (via double-click), and LibreOffice Calc displays all Russian and Kazakh letters cleanly without corruption.
+
+![Opens correctly across all apps](evidence/opens-correctly.png)
 
 ## What did not work the first time
-<at least one real thing>
+1. **WPS Office showed an empty sheet:** Initially, I tried opening `staff-broken.csv` in WPS Office instead of LibreOffice Calc, which resulted in a completely blank table because WPS failed to auto-detect the legacy single-byte encoding. Installing and using LibreOffice Calc revealed the default `Cyrillic (Windows-1251)` import behavior.
+2. **Wrong working directory in terminal:** When running commands to save `evidence/file-after.txt`, I initially executed them from the home directory (`~`) instead of `~/labs/lab05-encoding`, resulting in `No such file or directory` until I navigated into the lab folder with `cd`.
