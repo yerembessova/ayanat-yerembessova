@@ -43,10 +43,7 @@ iconv -f <SOURCE> -t UTF-8 "$in" > "$out"        # 1. encoding
 
 ## Verification
 Output of `file evidence/staff-fixed.csv` :** `Unicode text, UTF-8 (with BOM) text, with CRLF line terminators`. The file now starts with the UTF-8 BOM bytes `efbb bf` followed by `49 44 3b` (`ID;`) and standard two-byte UTF-8 sequences instead of single-byte RK1048 characters.
-
-
 ![Opens correctly across all apps](evidence/opens-correctly.png)
 
 ## What did not work the first time
-1. **WPS Office showed an empty sheet:** Initially, I tried opening `staff-broken.csv` in WPS Office instead of LibreOffice Calc, which resulted in a completely blank table because WPS failed to auto-detect the legacy single-byte encoding. Installing and using LibreOffice Calc revealed the default `Cyrillic (Windows-1251)` import behavior.
-2. **Wrong working directory in terminal:** When running commands to save `evidence/file-after.txt`, I initially executed them from the home directory (`~`) instead of `~/labs/lab05-encoding`, resulting in `No such file or directory` until I navigated into the lab folder with `cd`.
+When running commands to save `evidence/file-after.txt`, I initially executed them from the home directory (`~`) instead of `~/labs/lab05-encoding`, resulting in `No such file or directory` until I navigated into the lab folder with `cd`.
