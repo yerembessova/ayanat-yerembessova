@@ -9,6 +9,11 @@ Excel
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 101 | Jбдірахманова | Аружан | Бухгалтерия | Главный бухгалтер | Алматы |
 
+LibreOffice
+
+<img width="658" height="61" alt="image" src="https://github.com/user-attachments/assets/f82edf73-4fb9-4585-a4ba-fdd314474c07" />
+
+
 <how it looked in Excel, LibreOffice and the terminal — one line each>
 
 ## Diagnosis (made before the fix)
