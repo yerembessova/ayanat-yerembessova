@@ -21,14 +21,24 @@ white diamonds with question marks (�) appear in place of all Russian and Kaza
 
 
 ## Diagnosis (made before the fix)
-- file said: <…>  (evidence/file-before.txt)
-- First 16 bytes: <hex>  (evidence/hexdump-before.txt)
-- Encoding: <exact name> — because <bytes>
-- Line ending: <CRLF / LF> — because <bytes>
-- BOM: <yes / no> — because <bytes>; in the fixed file I <kept / removed / added> it because <reason>
+- file said: Non-ISO extended-ASCII text, with CRLF line terminators (evidence/file-before.txt)
+- First 16 bytes: '4944 3bd4 e0ec e8eb e8ff 3bc8 ecff 3bce'  (evidence/hexdump-before.txt)
+- Encoding: RK1048 — because each Cyrillic and Kazakh character is stored as a single byte 
+- Line ending: CRLF — because the end of the header line in the hex dump (offset `00000024`) contains the bytes `0d 0a` right before `3130 313b` (`101;`)
+- BOM: no — because the file starts directly with `49 44` instead of `ef bb bf`; in the fixed file I added it because Microsoft Excel on Windows requires the UTF-8 BOM (`EF BB BF`) to auto-detect UTF-8 when opened via double-click
+
 
 ## Fix
-<the command or scripts/fix.sh, in a code block>
+< #!/bin/sh
+# Lab 5: convert staff-broken.csv from <SOURCE> to UTF-8
+in=evidence/staff-broken.csv
+out=evidence/staff-fixed.csv
+iconv -f <SOURCE> -t UTF-8 "$in" > "$out"        # 1. encoding
+# 2. line endings — keep ONE of these lines:
+# sed -i 's/\r$//' "$out"                         #    CRLF -> LF
+# sed -i 's/$/\r/' "$out"                         #    LF -> CRLF (only if the source was LF)
+# 3. BOM — only if you decided to add one:
+# printf '\357\273\277' | cat - "$out" > tmp && mv tmp "$out" >
 
 ## Verification
 <file-after.txt summary; the screenshot evidence/opens-correctly.png>
