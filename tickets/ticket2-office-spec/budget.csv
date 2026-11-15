@@ -1,1 +1,47 @@
+role,component,model,price_kzt,source,date
+Accountant,CPU,Intel Core i3-12100,62000,https://shop.kz
+Accountant,Cooler,DeepCool Alta 9,5000,https://shop.kz
+Accountant,Motherboard,ASUS PRIME H610M-K D4,44000,https://shop.kz
+Accountant,RAM,Kingston Fury Beast 16GB (2x8GB) DDR4-3200,24000,https://shop.kz
+Accountant,SSD,Kingston NV2 1TB M.2 NVMe,35000,https://shop.kz
+Accountant,Case + PSU,AeroCool CS-107 500W,28000,https://shop.kz
+Accountant,Monitor,LG 24MR400-B 24" IPS Full HD,62000,https://shop.kz
+Accountant,OS,Microsoft Windows 11 Home 64-bit OEM,102320,https://shop.kz
+Accountant,Peripherals,Logitech MK120 Keyboard + Mouse Combo,8000,https://shop.kz
+Accountant,Subtotal,Build 1 Total,370320,Calculated,2026-11-15
+Sales,CPU,AMD Ryzen 5 7600,105000,https://shop.kz
+Sales,Cooler,DeepCool AG400,13000,https://shop.kz
+Sales,Motherboard,ASUS PRIME A620M-K DDR5,58000,https://shop.kz
+Sales,RAM,Kingston Fury Beast 32GB (2x16GB) DDR5-5600,68000,https://shop.kz
+Sales,SSD,Kingston NV2 1TB M.2 NVMe,35000,https://shop.kz
+Sales,PSU,DeepCool PK500D 500W 80+ Bronze,26000,https://shop.kz
+Sales,Case,DeepCool Matrexx 30,22000,https://shop.kz
+Sales,Monitor,LG 24MR400-B 24" IPS Full HD,62000,https://shop.kz
+Sales,OS,Microsoft Windows 11 Home 64-bit OEM,102320,https://shop.kz
+Sales,Peripherals,Logitech MK120 + Logitech H111 Headset,168480,https://shop.kz
+Sales,Subtotal,Build 2 Total,659800,Calculated,2026-11-15
+WebDev,CPU,AMD Ryzen 7 7700,145000,https://shop.kz
+WebDev,Cooler,DeepCool AK400,18000,https://shop.kz
+WebDev,Motherboard,MSI PRO B650M-P DDR5,78000,https://shop.kz
+WebDev,RAM,Kingston Fury Beast 32GB (2x16GB) DDR5-6000,72000,https://shop.kz
+WebDev,SSD,Kingston KC3000 1TB PCIe 4.0 NVMe,56000,https://shop.kz
+WebDev,PSU,DeepCool PK600D 600W 80+ Bronze,31000,https://shop.kz
+WebDev,Case,DeepCool CC560,34000,https://shop.kz
+WebDev,Monitor,AOC 27B2H2 27" IPS Full HD,75000,https://shop.kz
+WebDev,OS,Ubuntu 24.04 LTS (GNU GPL Open Source),0,https://ubuntu.com
+WebDev,Peripherals,Logitech MK270 Wireless Combo + Cat6 Cable,173300,https://shop.kz
+WebDev,Subtotal,Build 3 Total,682300,Calculated,2026-11-15
+Designer,CPU,Intel Core i5-12400F,68000,https://shop.kz
+Designer,Cooler,DeepCool AG400,13000,https://shop.kz
+Designer,Motherboard,MSI PRO B760M-P DDR4,62000,https://shop.kz
+Designer,RAM,Kingston Fury Beast 32GB (2x16GB) DDR4-3200,44000,https://shop.kz
+Designer,SSD,Kingston KC3000 1TB PCIe 4.0 NVMe,56000,https://shop.kz
+Designer,GPU,Palit GeForce RTX 4060 Dual 8GB,195000,https://shop.kz
+Designer,PSU,DeepCool PK650D 650W 80+ Bronze,34000,https://shop.kz
+Designer,Case,DeepCool CC560,34000,https://shop.kz
+Designer,Monitor,LG UltraGear 27GN800-B 27" IPS QHD 100% sRGB,145000,https://shop.kz
+Designer,OS,Microsoft Windows 11 Home 64-bit OEM,102320,https://shop.kz
+Designer,Peripherals,Logitech MK270 Wireless Combo,67970,https://shop.kz
+Designer,Subtotal,Build 4 Total,821290,Calculated,2026-11-15
+ALL,Grand Total,4 Complete Workstations (Within 3000000 KZT Cap),2533710,Calculated,2026-11-15
 
