@@ -12,7 +12,7 @@
 
 **Bottleneck:** memory, not CPU. Chrome with forty tabs plus an active video call uses around 12–15 GB of RAM; on 16 GB, background tabs reload and the machine starts swapping mid-call.
 
-**Trade-off:** took a Ryzen 5 7600 instead of a Ryzen 7 and skipped a discrete GPU, spending the ~60,000 KZT saved on 32 GB of DDR5 RAM instead of 16 GB. The CPU idles in this role; the memory does not.
+**Trade-off:** took a Ryzen 5 5600 instead of a Ryzen 7 and skipped a discrete GPU, spending the ~60,000 KZT saved on 32 GB of DDR5 RAM instead of 16 GB. The CPU idles in this role; the memory does not.
 
 **Total:**  KZT (budget.csv, rows 12–21)
 
@@ -30,6 +30,6 @@
 
 **Bottleneck:** GPU acceleration (VRAM and CUDA cores) during canvas rendering and export, plus display color accuracy.
 
-**Trade-off:** chose a 6-core Intel Core i5-14400F instead of a Core i7 and limited storage to a single 1 TB NVMe SSD instead of adding a secondary archive drive, allocating the bulk of the budget to an NVIDIA RTX 4060 8 GB GPU and a 27" 1440p IPS monitor with 100% sRGB coverage. Design tools rely far more on GPU acceleration and color fidelity than on extra CPU cores.
+**Trade-off:** chose a 6-core Intel Core i5-12400F instead of a Core i7 and limited storage to a single 1 TB NVMe SSD instead of adding a secondary archive drive, allocating the bulk of the budget to an NVIDIA RTX 3050 8 GB GPU and a 27" 1440p IPS monitor with 100% sRGB coverage. Design tools rely far more on GPU acceleration and color fidelity than on extra CPU cores.
 
 **Total:**  KZT (budget.csv, rows 32–41)
