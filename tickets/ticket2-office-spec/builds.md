@@ -1,6 +1,8 @@
 ### Build 1 — Accountant
 **Load:** 1C:Enterprise, local tax reporting tools (SONO, ESF), multi-sheet Excel workbooks, and 10–15 browser tabs running simultaneously for 8 hours a day.
+
 **Bottleneck:** storage I/O and OS compatibility, not graphics. Large 1C databases and heavy spreadsheets stall on slow drives, and Kazakhstani accounting software requires native Windows.
+
 **Trade-off:** took an Intel Core i3-12100 with DDR4 memory and integrated graphics instead of a Core i5 with DDR5 and a discrete GPU, redirecting the saved ~80,000 KZT into a licensed Windows 11 copy and a reliable 1 TB NVMe SSD. Accounting workloads are mostly single-threaded and do not use 3D acceleration.
 **Total:**  KZT (budget.csv, rows 2–11)
 
