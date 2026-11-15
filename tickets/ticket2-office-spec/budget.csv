@@ -1,3 +1,53 @@
+
+| Role | Component | Model | Price (KZT) | Source | Date |
+| :--- | :--- | :--- | :---: | :--- | :---: |
+| Accountant | CPU | Intel Core i3-12100 | 64 800 | [shop.kz](https://shop.kz) | |
+| Accountant | Cooler | DeepCool AK400 | 13 900 | [shop.kz](https://shop.kz) | |
+| Accountant | Motherboard | Gigabyte H610M K DDR4 (REV2.0), LGA1700 | 38 990 | [shop.kz](https://shop.kz) | |
+| Accountant | RAM | DDR-4 DIMM 16 GB 3200 MHz GeIL Orion, 2x 8 GB Kit, BOX (GOG416GB3200C16BDC) | 83 990 | [shop.kz](https://shop.kz) | |
+| Accountant | SSD | Kingston NV3 1TB M.2 PCIe 4.0 | 78 990 | [shop.kz](https://shop.kz) | |
+| Accountant | Case | Wintek K310 Black | 7 590 | [shop.kz](https://shop.kz) | |
+| Accountant | PSU | DeepCool GamerStorm PF500X-HD 500W White | 21 800 | [shop.kz](https://shop.kz) | |
+| Accountant | Monitor | Philips 24E1N3300A 23.8" Black | 65 590 | [shop.kz](https://shop.kz) | |
+| Accountant | OS | Microsoft Windows 11 Home 64-bit DVD | 79 990 | [shop.kz](https://shop.kz) | |
+| Accountant | Peripherals | X-Game XK-220OGB Keyboard + Defender Optimum MB-270 Mouse | 5 880 | [Keyboard](https://shop.kz) + [Mouse](https://shop.kz) | |
+| **Accountant** | **Subtotal** | **Build 1 Total** | **461 520** | Calculated | 2026-11-16 |
+| Sales Manager | CPU | AMD Ryzen 5 5600X AM4 OEM | 66 600 | [shop.kz](https://shop.kz) | |
+| Sales Manager | Cooler | DeepCool AG400 LED | 12 990 | [shop.kz](https://shop.kz) | |
+| Sales Manager | Motherboard | ASUS Prime B650M-R AM5 | 54 590 | [shop.kz](https://shop.kz) | |
+| Sales Manager | RAM | G.SKILL Trident Z5 RGB 32GB (2x16GB) DDR5-5600 Black BOX | 290 990 | [shop.kz](https://shop.kz) | |
+| Sales Manager | SSD | MSI Spatium M470 Pro 1TB M.2 PCIe 4.0 | 96 990 | [shop.kz](https://shop.kz) | |
+| Sales Manager | Case | Wintek K310 Black | 7 590 | [shop.kz](https://shop.kz) | |
+| Sales Manager | PSU | DeepCool GamerStorm PF500X-HD 500W White | 21 800 | [shop.kz](https://shop.kz) | |
+| Sales Manager | Monitor | Philips 24E1N3300A 23.8" Black | 65 590 | [shop.kz](https://shop.kz) | |
+| Sales Manager | OS | Microsoft Windows 11 Home 64-bit DVD | 79 990 | [shop.kz](https://shop.kz) | |
+| Sales Manager | Peripherals | X-Game XK-220OGB Keyboard + Defender Optimum MB-270 Mouse + A4Tech HU-8 Headset | 11 770 | [Keyboard](https://shop.kz) + [Mouse](https://shop.kz) + [Headset](https://shop.kz) | |
+| **Sales Manager** | **Subtotal** | **Build 2 Total** | **708 900** | Calculated | 2026-11-16 |
+| WebDev | CPU | AMD Ryzen 7 7700 AM5 OEM | 100 990 | | |
+| WebDev | Cooler | DeepCool AK400 (LGA1700) | 13 990 | [shop.kz](https://shop.kz) | |
+| WebDev | Motherboard | ASRock B650M PG Lightning AM5 | 62 990 | | |
+| WebDev | RAM | G.SKILL Trident Z5 RGB 32GB (2x16GB) DDR5-5600 Black BOX | 290 990 | [shop.kz](https://shop.kz) | |
+| WebDev | SSD | Kingston NV3 1TB M.2 PCIe 4.0 | 78 990 | [shop.kz](https://shop.kz) | |
+| WebDev | PSU | DeepCool GamerStorm PF600X-HD 600W Black | 23 990 | [shop.kz](https://shop.kz) | |
+| WebDev | Case | PCCooler C3 B310 BK Black | 11 990 | [shop.kz](https://shop.kz) | |
+| WebDev | Monitor | Xiaomi A27Qi 2026 27" Black | 84 990 | [shop.kz](https://shop.kz) | |
+| WebDev | OS | Ubuntu 24.04 LTS (GNU GPL Open Source) | 0 | [ubuntu.com](https://ubuntu.com) | |
+| WebDev | Peripherals | X-Game XK-220OGB Keyboard + Defender Optimum MB-270 Mouse | 5 880 | [Keyboard](https://shop.kz) + [Mouse](https://shop.kz) | |
+| **WebDev** | **Subtotal** | **Build 3 Total** | **674 800** | Calculated | 2026-11-16 |
+| Designer | CPU | Intel Core i5-12400F LGA1700 OEM | 66 890 | [shop.kz](https://shop.kz) | |
+| Designer | Cooler | DeepCool AG400 LED | 12 990 | [shop.kz](https://shop.kz) | |
+| Designer | Motherboard | Gigabyte B760M DS3H DDR4 LGA1700 | 62 990 | [shop.kz](https://shop.kz) | |
+| Designer | RAM | G.SKILL Trident Z5 RGB 32GB (2x16GB) DDR5-5600 Black BOX | 290 990 | [shop.kz](https://shop.kz) | |
+| Designer | SSD | MSI Spatium M470 Pro 1TB M.2 PCIe 4.0 | 96 990 | [shop.kz](https://shop.kz) | |
+| Designer | GPU | Palit GeForce RTX 3050 StormX V1 6GB | 166 990 | [shop.kz](https://shop.kz) | |
+| Designer | PSU | DeepCool GamerStorm PF650X 650W | 24 990 | [shop.kz](https://shop.kz) | |
+| Designer | Case | Wintek K310 Black | 7 590 | [shop.kz](https://shop.kz) | |
+| Designer | Monitor | Xiaomi A27Qi 2026 27" Black | 84 990 | [shop.kz](https://shop.kz) | |
+| Designer | OS | Microsoft Windows 11 Home 64-bit DVD | 79 990 | [shop.kz](https://shop.kz) | |
+| Designer | Peripherals | X-Game XK-220OGB Keyboard + Defender Optimum MB-270 Mouse | 5 880 | [Keyboard](https://shop.kz) + [Mouse](https://shop.kz) | |
+| **Designer** | **Subtotal** | **Build 4 Total** | **901 280** | Calculated | 2026-11-16 |
+| **ALL** | **Grand Total** | **4 Complete Workstations** | **2 746 500** | Calculated | 2026-11-15 |
+
 role,component,model,price_kzt,source,date
 
 Accountant,CPU,Intel Core i3-12100,64 800,https://shop.kz/offer/protsessor-intel-core-i3-12100-lga1700-oem/
