@@ -1,0 +1,47 @@
+role,component,model,price_kzt,source,date
+Accountant,CPU,Intel Core i3-12100,64 800,https://shop.kz/offer/protsessor-intel-core-i3-12100-lga1700-oem/
+Accountant,Cooler,DeepCool AK400,13900,https://shop.kz/offer/kuler-deepcool-ak400-lga1700/
+Accountant,Motherboard,Gigabyte H610M K DDR4 (REV2.0), LGA1700,38 990,https://shop.kz/offer/materinskaya-plata-gigabyte-h610m-k-ddr4-rev2-0-lga1700/
+Accountant,RAM,DDR-4 DIMM 16 GB 3200 MHz GeIL Orion, 2x 8 GB Kit, BOX (GOG416GB3200C16BDC),83 990,https://shop.kz/offer/ddr-4-dimm-16-gb-3200-mhz-geil-orion-2x-8-gb-kit-box-gog416gb3200c16bdc/
+Accountant,SSD,Kingston NV3 1TB M.2 PCIe 4.0,78 990,https://shop.kz/offer/ssd-nakopitel-1-tb-kingston-nv3-m-2-pcie-4-0/
+Accountant,Case,Wintek K310 Black,7 590,https://shop.kz/offer/korpus-wintek-k310-black/
+Accountant,PSU,DeepCool GamerStorm PF500X-HD 500W White,21 800,https://shop.kz/offer/blok-pitaniya-atx-500-w-deepcool-gamerstorm-pf500x-hd-white/
+Accountant,Monitor,Philips 24E1N3300A 23.8" Black,65 590,https://shop.kz/offer/monitor-23-8-philips-24e1n3300a-black/
+Accountant,OS,Microsoft Windows 11 Home 64-bit DVD,79 990,https://shop.kz/offer/microsoft-windows-11-home-64-bit-dvd/
+Accountant,Peripherals,X-Game XK-220OGB Keyboard + Defender Optimum MB-270 Mouse,5 880,https://shop.kz/offer/klaviatura-x-game-xk-220ogb-black-usb/ + https://shop.kz/offer/mysh-defender-optimum-mb-270-52271-black-usb/
+Accountant,Subtotal,Build 1 Total,461512,Calculated,2026-11-16
+Sales Manager,CPU,AMD Ryzen 5 7600 OEM,91 770,https://www.dns-shop.kz/product/93478ee7e957ed20/processor-amd-ryzen-5-7600-oem/
+Sales Manager,Cooler,DeepCool AG400 LED,12 990,https://shop.kz/offer/kuler-deepcool-ag400-led/
+Sales Manager,Motherboard,ASUS Prime B650M-R AM5,54 590,https://shop.kz/offer/materinskaya-plata-asus-prime-b650m-r-am5/
+Sales Manager,RAM,G.SKILL Trident Z5 RGB 32GB (2x16GB) DDR5-5600 Black BOX,290 990,https://shop.kz/offer/ddr-5-dimm-32-gb-5600-mhz-g-skill-trident-z5-rgb-2x-16-gb-kit-black-box-f5-5600j4040c16gx2-tz5rk/
+Sales Manager,SSD,MSI Spatium M470 Pro 1TB M.2 PCIe 4.0,96 990,https://shop.kz/offer/ssd-nakopitel-1-tb-msi-spatium-m470-pro-m-2-pcie-4-0/
+Sales Manager,Case,Wintek K310 Black,7 590,https://shop.kz/offer/korpus-wintek-k310-black/
+Sales Manager,PSU,DeepCool GamerStorm PF500X-HD 500W White,21 800,https://shop.kz/offer/blok-pitaniya-atx-500-w-deepcool-gamerstorm-pf500x-hd-white/
+Sales Manager,Monitor,Philips 24E1N3300A 23.8" Black,65 590,https://shop.kz/offer/monitor-23-8-philips-24e1n3300a-black/
+Sales Manager,OS,Microsoft Windows 11 Home 64-bit DVD,79 990,https://shop.kz/offer/microsoft-windows-11-home-64-bit-dvd/
+Sales Manager,Peripherals,X-Game XK-220OGB Keyboard + Defender Optimum MB-270 Mouse + A4Tech HU-8 Headset,11 770,https://shop.kz/offer/klaviatura-x-game-xk-220ogb-black-usb/ + https://shop.kz/offer/mysh-defender-optimum-mb-270-52271-black-usb/ + https://shop.kz/offer/garnitura-a4tech-hu-8-black/
+Sales Manager,Subtotal,Build 1 Total,708900,Calculated,2026-11-16
+WebDev,CPU,AMD Ryzen 7 7700 AM5 OEM,100 990,
+WebDev,Cooler,DeepCool AK400 (LGA1700),13 990,https://shop.kz/offer/kuler-deepcool-ak400-lga1700/
+WebDev,Motherboard,ASRock B650M PG Lightning AM5,62 990,
+WebDev,RAM,G.SKILL Trident Z5 RGB 32GB (2x16GB) DDR5-5600 Black BOX,290 990,https://shop.kz/offer/ddr-5-dimm-32-gb-5600-mhz-g-skill-trident-z5-rgb-2x-16-gb-kit-black-box-f5-5600j4040c16gx2-tz5rk/
+WebDev,SSD,Kingston NV3 1TB M.2 PCIe 4.0,78 990,https://shop.kz/offer/ssd-nakopitel-1-tb-kingston-nv3-m-2-pcie-4-0/
+WebDev,PSU,DeepCool GamerStorm PF600X-HD 600W Black,23 990,https://shop.kz/offer/blok-pitaniya-atx-600-w-deepcool-gamerstorm-pf600x-hd/
+WebDev,Case,PCCooler C3 B310 BK Black,11 990,https://shop.kz/offer/korpus-pccooler-c3-b310-bk-black/
+WebDev,Monitor,Xiaomi A27Qi 2026 27" Black,84 990,https://shop.kz/offer/monitor-27-xiaomi-a27qi-2026-black/
+WebDev,OS,Ubuntu 24.04 LTS (GNU GPL Open Source),0,https://ubuntu.com
+WebDev,Peripherals,X-Game XK-220OGB Keyboard + Defender Optimum MB-270 Mouse,5 880,https://shop.kz/offer/klaviatura-x-game-xk-220ogb-black-usb/ + https://shop.kz/offer/mysh-defender-optimum-mb-270-52271-black-usb/
+WebDev,Subtotal,Build 3 Total,674800,Calculated,2026-11-16
+Designer,CPU,Intel Core i5-12400F LGA1700 OEM,66 890,https://shop.kz/offer/protsessor-intel-core-i5-12400f-lga1700-oem/
+Designer,Cooler,DeepCool AG400 LED,12 990,https://shop.kz/offer/kuler-deepcool-ag400-led/
+Designer,Motherboard,MSI PRO B760M-E DDR5,58 000,https://www.dns-shop.kz/product/c1c062315602ed20/materinskaa-plata-msi-pro-b760m-e/
+Designer,RAM,G.SKILL Trident Z5 RGB 32GB (2x16GB) DDR5-5600 Black BOX,290 990,https://shop.kz/offer/ddr-5-dimm-32-gb-5600-mhz-g-skill-trident-z5-rgb-2x-16-gb-kit-black-box-f5-5600j4040c16gx2-tz5rk/
+Designer,SSD,MSI Spatium M470 Pro 1TB M.2 PCIe 4.0,96 990,https://shop.kz/offer/ssd-nakopitel-1-tb-msi-spatium-m470-pro-m-2-pcie-4-0/
+Designer,GPU,Palit GeForce RTX 3050 StormX V1 6GB,166 990,https://shop.kz/offer/videokarta-palit-rtx-3050-stormx-v1-6-gb-geforce-rtx-3050/
+Designer,PSU,DeepCool GamerStorm PF650X 650W,24 990,https://shop.kz/offer/blok-pitaniya-atx-650-w-deepcool-gamerstorm-pf650x/
+Designer,Case,Wintek K310 Black,7 590,https://shop.kz/offer/korpus-wintek-k310-black/
+Designer,Monitor,Xiaomi A27Qi 2026 27" Black,84 990,https://shop.kz/offer/monitor-27-xiaomi-a27qi-2026-black/
+Designer,OS,Microsoft Windows 11 Home 64-bit DVD,79 990,https://shop.kz/offer/microsoft-windows-11-home-64-bit-dvd/
+Designer,Peripherals,X-Game XK-220OGB Keyboard + Defender Optimum MB-270 Mouse,5 880,https://shop.kz/offer/klaviatura-x-game-xk-220ogb-black-usb/ + https://shop.kz/offer/mysh-defender-optimum-mb-270-52271-black-usb/
+Designer,Subtotal,Build 4 Total,901280,Calculated,2026-11-16
+ALL,Grand Total,4 Complete Workstations,2746500,Calculated,2026-11-15
